@@ -20,7 +20,7 @@ sudo -u postgres psql -c "CREATE DATABASE tuxtelldb OWNER tuxtell;" 2>/dev/null 
 
 echo "=== 4. Clonando proyecto ==="
 if [ ! -d "$APP_DIR" ]; then
-    git clone https://github.com/TU_USUARIO/wisp-backend.git $APP_DIR
+    git clone https://AlessandroPastor:$GH_TOKEN@github.com/AlessandroPastor/TuxTell.git $APP_DIR
 else
     cd $APP_DIR && git pull
 fi
